@@ -1,0 +1,3 @@
+compile javac BoundedQueue.java
+
+to run java BoundedQueue

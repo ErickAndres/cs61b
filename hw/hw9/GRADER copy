@@ -1,0 +1,12 @@
+GRADER file for Homework 9
+
+Your Name: Erick Andres  
+Your Login: cs61b-ki
+
+Part II.  
+To create a random maze without using disjoint sets is to go to through the 4 possible(up, down, left, right) directions by random order. The algorithm already checks if it has to go back to where it came from and not search a cell it has already visited. We continue until the maze is completed. 
+
+a) It will randomly choose a possible direction, and if the cell it goes to has not already been visited and is not from the direction that it came from, then we continue. Since the basic checking algorithm remains unchanged, it will still do the same things the current algorithm is doing just with the condition stated above.
+
+b) It does it in a similar manner like in part 2, have an array of the 4 possible directions that it could go to, and randomize them by choosing a random number from the array, swapping it with the last element that has yet to be sorted and then decrement the iterating variable until all cells of the array have been randomly distributed. Then put each one in correct order.
+

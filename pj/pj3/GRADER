@@ -1,0 +1,21 @@
+GRADER file for Project 3
+
+Your Name: Erick Andres  
+Your Login: cs61b-ki
+
+Partner Name: Marsalis Gibson
+Partner Login: cs61b-uf
+
+Part I. 
+For WUGraph, we added two helper functions, getEdge() and getVertex() which both return their respective internal representations. For the Vertex Class, each vertex knew its neighbors that was represented as a DList.
+
+removeVertex - To ensure that this method runs in O(d) time, we included two DListNode references in the edge class (that represented both positions of the edge) to easily remove the edges. We also included a DListNode reference of the vertex itself in the Vertex class to easily remove the Vertex. 
+
+getVertices - We included a DList of all of the vertices to make this method run in o(V) time.
+
+
+
+Part II.
+
+For Kruskal, we created a distinct Edge class that implemented Comparable, and kept track of its weight, and both the starting and destination vertices. Furthermore, we created a compareTo function in our Edge class which is called in the quickSort algorithm to compare with the chosen pivot. In addition, we used a queue to store the edges.
+ 

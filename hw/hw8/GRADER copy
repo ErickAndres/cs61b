@@ -1,0 +1,21 @@
+GRADER file for Homework 8
+
+Your Name: Erick Andres  
+Your Login: cs61b-ki
+
+Part III.  Running time comparisons
+
+  List size         mergesort             quicksort
+      100              0 msec                0 msec
+    1,000              11 msec               3 msec
+   10,000              40 msec              23 msec
+  100,000             116 msec              89 msec
+1,000,000            2398 msec            1015 msec
+
+Part IV.
+
+  Is mergesort stable? Yes 
+  Why or why not? Because when we have two equal keys, we always first insert the key starting from the left, which came from the left side of the original list. As a result, the key that came from the left stays on the left.
+
+  Is quicksort stable? Yes
+  Why or why not? Because when we remove keys one by one from left to right. Equivalent keys get inserted in the same order, one by one, into the qEquals queue, which remains untouched after this. When we append small, equals, and large, we again work from left to right, and the order is maintained.

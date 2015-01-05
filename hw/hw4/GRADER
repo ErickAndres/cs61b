@@ -1,0 +1,14 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 Erick Andres    cs61b-ki\
+\
+Our ADT is not well protected because the remove method can corrupt our DList since it may change the size invariant. Although the head and size fields of the DList are protected, and as a result cannot be changed from outside the package, our problem is found in that our methods in the DList are public. This can allow it to be accessed from outside the package from some random application. As a result, the remove method takes a DListNode as parameter, but doesn\'92t check if the DListNode is within the list we are actually calling the remove method on. Because of the access we get from our other methods, we can attempt to remove the front of another instance of DList even if the method is called on the instance of DList. This is where the size field is violated since we decrement the size of the original instance even though nothing has been removed.\
+\
+\
+\
+\
+}
